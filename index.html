@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>English Bangla</title>
+    <title>English Janala</title>
     <!-- Manual CSS -->
     <link rel="stylesheet" href="Style/style.css" />
     <!-- Google Font -->
@@ -44,56 +44,69 @@
             colors: {
               clifford: "#da373d",
               "btn-clr": "#ced4da",
-              "info-clr": "#585858"
-            }
-          }
-        }
+              "info-clr": "#585858",
+            },
+          },
+        },
       };
     </script>
   </head>
-  <body class="font-poppins text-base bg-base-200">
+
+  <body id="main-body" class="font-poppins text-base bg-base-200">
     <!-- Header -->
-    <header class="mb-[200px]">
+    <header>
       <!-- Navbar -->
-      <div class="navbar bg-[#a9bcd0] py-4">
-        <!-- Logo -->
-        <div class="navbar-start">
-          <a class="btn btn-ghost text-2xl font-bold"
-            >English <img src="assets/logo.png" alt="logo" />
-            <span class="font-tiro text-2xl font-bold">জানালা</span>
-          </a>
-        </div>
-        <!-- Buttons -->
-        <div class="navbar-end">
-          <!-- FAQ -->
-          <a class="btn bg-btn-clr drop-shadow-md border-4 border-[#3d2c8d]"
-            ><img
-              src="assets/fa-circle-question.png"
-              alt="fa-circle-question"
-            />
-            FAQ</a
-          >
-          <!-- Learn -->
-          <a
-            class="btn bg-btn-clr drop-shadow-md border-4 border-[#3d2c8d] ml-4"
-            ><img src="assets/fa-book-open.png" alt="fa-book-open" /> Learn</a
-          >
-          <!-- Logout -->
-          <a
-            class="btn bg-btn-clr drop-shadow-md border-4 border-[#3d2c8d] ml-4"
-            ><img
-              src="assets/fa-arrow-right-from-bracket.png"
-              alt="fa-arrow-right-from-bracket"
-            />Logout</a
-          >
+      <div
+        class="bg-[#a9bcd0] py-7 fixed top-0 w-full z-10 border-b-[2px] border-[#8d99ae]"
+      >
+        <div class="navbar md:container mx-auto">
+          <!-- Logo -->
+          <div class="navbar-start">
+            <a class="btn btn-ghost text-2xl font-bold items-center" href="#main-body">
+              English <img src="assets/logo.png" alt="logo" />
+              <span class="font-tiro text-2xl font-bold">জানালা</span>
+            </a>
+          </div>
+          <!-- Buttons -->
+          <div class="navbar-end">
+            <!-- FAQ -->
+            <a
+              class="btn bg-btn-clr drop-shadow-md border-4 border-[#3d2c8d]"
+              href="#faq-section"
+            >
+              <img
+                src="assets/fa-circle-question.png"
+                alt="fa-circle-question"
+              />
+              FAQ
+            </a>
+            <!-- Learn -->
+            <a
+              class="btn bg-btn-clr drop-shadow-md border-4 border-[#3d2c8d] ml-4"
+              href="#learn-section"
+            >
+              <img src="assets/fa-book-open.png" alt="fa-book-open" /> Learn
+            </a>
+            <!-- Logout -->
+            <a
+              class="btn bg-btn-clr drop-shadow-md border-4 border-[#3d2c8d] ml-4"
+            >
+              <img
+                src="assets/fa-arrow-right-from-bracket.png"
+                alt="fa-arrow-right-from-bracket"
+              />
+              Logout
+            </a>
+          </div>
         </div>
       </div>
+
       <!-- Banner Part -->
-      <div class="md:container mx-auto flex items-center">
+      <div class="md:container mx-auto flex items-center pt-28">
         <!-- Left Part -->
         <div class="flex-1">
           <h2 class="font-bold text-4xl drop-shadow-sm mb-5">
-           <span class="text-[#00BCFF]">English</span> is Easy!!
+            <span class="text-[#00BCFF]">English</span> is Easy!!
           </h2>
           <p class="font-hind font-tiro text-base drop-shadow-sm mb-5">
             আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
@@ -103,10 +116,16 @@
           <!-- Input  -->
           <fieldset class="fieldset">
             <input type="email" class="input w-2/5 mb-5" placeholder="Email" />
-            <br>
-            <input type="password" class="input w-2/5 mb-5" placeholder="Password" />
+            <br />
+            <input
+              type="password"
+              class="input w-2/5 mb-5"
+              placeholder="Password"
+            />
           </fieldset>
-          <a class="btn bg-btn-clr drop-shadow-md border-4 border-[#8d99ae]">Get started</a>
+          <a class="btn bg-btn-clr drop-shadow-md border-4 border-[#8d99ae]"
+            >Get started</a
+          >
         </div>
         <!-- Right part -->
         <div class="w-5/12">
@@ -114,74 +133,117 @@
         </div>
       </div>
     </header>
+
     <!-- Main -->
     <main class="md:container mx-auto">
-      <!-- first section -->
-      <section class="mb-[200px] text-center border-[4px] border-[#ced4da] rounded-2xl drop-shadow-md">
-        <div class="py-16">
-          <h2 class="font-bold text-4xl drop-shadow-sm mb-5">
-           <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+      <!-- LEARN section -->
+      <a onclick="faltuButton ()" class="btn bg-gray-500 text-white">Hagu koro</a>
+      <section
+        id="learn-section"
+        class="text-center pt-[200px] rounded-2xl drop-shadow-md"
+      >
+        <div id="button-container" class="mb-10">
+          <h2 class="font-bold text-4xl drop-shadow-sm mb-10">
+            <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
           </h2>
-          <a class="btn bg-btn-clr drop-shadow-md border-4 border-[#8d99ae]">Get started</a>
+          <!-- Buttons -->
         </div>
-        <div class="bg-[#e9ecef] py-16 rounded-b-2xl">
-          <p class="font-hind font-tiro text-base drop-shadow-sm mb-5">
-            আপনি এখনো কোন Lesson Select করেন ন
-          </p>
-          <h2 class="font-mwdium text-3xl drop-shadow-sm mb-5">
-           একটি Lesson Select করুন।
-          </h2>
+        <!-- cards container -->
+        <div id="startup-card">
+          <div
+            class="bg-[#e9ecef] rounded-b-2xl border-[2px] border-[#8d99ae] py-16"
+          >
+            <p class="font-hind font-tiro text-base drop-shadow-sm mb-3">
+              আপনি এখনো কোন Lesson Select করেন ন
+            </p>
+            <h2 class="font-hind text-medium text-4xl drop-shadow-sm">
+              একটি Lesson Select করুন।
+            </h2>
+          </div>
+        </div>
+        <div id="cards-startup">
+          
         </div>
       </section>
-      <!-- second section -->
-      <section class="mb-[200px]">
-        <h2 class="font-bold text-4xl drop-shadow-sm mb-20 text-center">
+      
+
+      <!-- FAQ section -->
+      <section id="faq-section" class="pt-[200px]">
+        <h2 class="font-bold text-4xl drop-shadow-sm text-center pt-6 pb-20">
           <span class="text-[#00BCFF]">Frequently</span> Asked Questions
-         </h2>
-         <!-- QUS Part -->
-         <div>
+        </h2>
+        <!-- QUS Part -->
+        <div>
           <!-- Qus 1 -->
-         <div tabindex="0" class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md mb-5">
-          <div class="collapse-title font-semibold">1. How do I create an account?</div>
-          <div class="collapse-content text-sm text-info-clr">
-            You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.😊
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md mb-5"
+          >
+            <div class="collapse-title font-semibold">
+              1. How do I create an account?
+            </div>
+            <div class="collapse-content text-sm text-info-clr">
+              You can start by exploring our beginner lessons, interactive
+              exercises, and quizzes. We also offer structured courses to guide
+              you step by step.😊
+            </div>
+          </div>
+          <!-- Qus 2 -->
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md mb-5"
+          >
+            <div class="collapse-title font-semibold">
+              2. Is this website free to use?
+            </div>
+            <div class="collapse-content text-sm text-info-clr">
+              No no!! Only free for Gorib peoples.🥱
+            </div>
+          </div>
+          <!-- Qus 3 -->
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md mb-5"
+          >
+            <div class="collapse-title font-semibold">
+              3. Do I need to create an account?
+            </div>
+            <div class="collapse-content text-sm text-info-clr">
+              No, no, you don't have to create an account. What good will it do
+              if you create an account? We'll die one day.😔
+            </div>
+          </div>
+          <!-- Qus 4 -->
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md mb-5"
+          >
+            <div class="collapse-title font-semibold">
+              4. How can I build my English vocabulary?
+            </div>
+            <div class="collapse-content text-sm text-info-clr">
+              Brother, I don't know that, do you have to tell me that too.😑
+            </div>
+          </div>
+          <!-- Qus 5 -->
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md"
+          >
+            <div class="collapse-title font-semibold">
+              5. Do you offer certificates for completed courses?
+            </div>
+            <div class="collapse-content text-sm text-info-clr">
+              No no. Never.😒
+            </div>
           </div>
         </div>
-        <!-- Qus 2 -->
-        <div tabindex="0" class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md mb-5">
-          <div class="collapse-title font-semibold">2. Is this website free to use?</div>
-          <div class="collapse-content text-sm text-info-clr">
-            No no!! Only free for Gorib peoples.🥱
-          </div>
-        </div>
-        <!-- Qus 3 -->
-        <div tabindex="0" class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md mb-5">
-          <div class="collapse-title font-semibold">3. Do I need to create an account?</div>
-          <div class="collapse-content text-sm text-info-clr">
-            No, no, you don't have to create an account. What good will it do if you create an account? We'll die one day.😔
-          
-          </div>
-        </div>
-        <!-- Qus 4 -->
-        <div tabindex="0" class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md mb-5">
-          <div class="collapse-title font-semibold">4. How can I build my English vocabulary?</div>
-          <div class="collapse-content text-sm text-info-clr">
-            Brother, I don't know that, do you have to tell me that too.😑
-          </div>
-        </div>
-        <!-- Qus 5 -->
-        <div tabindex="0" class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md">
-          <div class="collapse-title font-semibold">5. Do you offer certificates for completed courses?</div>
-          <div class="collapse-content text-sm text-info-clr">
-            No no. Never.😒
-          </div>
-        </div>
-         </div>
       </section>
     </main>
+
     <!-- Footer -->
     <footer
-      class="footer flex items-center sm:footer-horizontal bg-[#e9ecef] text-base-content font-poppins-regular border-2 border-[#ced4da] py-25 px-20"
+      class="footer flex items-center sm:footer-horizontal bg-[#e9ecef] text-base-content font-poppins-regular border-[2px] border-[#8d99ae] mt-[200px] py-25 px-20"
     >
       <!-- Left Part -->
       <nav class="flex-1">
@@ -216,7 +278,7 @@
         </div>
       </nav>
     </footer>
+
     <script src="JavaScript/fetch.js"></script>
   </body>
 </html>
- 

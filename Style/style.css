@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 .font-tiro {
     font-family: "Tiro Bangla", serif;
     font-weight: 400;
